@@ -1,6 +1,6 @@
 var onRun = function(context) {
   var doc = context.document
-var enteredName = doc.askForUserInput_initialValue("Enter a name you want each layer or artboard to get", "mockup-")
+var enteredName = doc.askForUserInput_initialValue("Enter a name you want each layer or artboard to get", "mockup-");
 var selection = context.selection;
 var selectionCount = selection.count()
 var artboards = Array();
