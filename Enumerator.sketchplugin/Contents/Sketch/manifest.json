@@ -1,0 +1,26 @@
+{
+  "author" : "Scott Savarie",
+  "commands" : [
+    {
+      "script" : "script.cocoascript",
+      "shortcut" : "ctrl alt cmd e",
+      "name" : "Enumerator",
+      "handlers" : {
+        "run" : "onRun"
+      },
+      "identifier" : "com.bohemiancoding.sketch.runscriptidentifier"
+    }
+  ],
+  "menu" : {
+    "items" : [
+      "com.bohemiancoding.sketch.runscriptidentifier"
+    ],
+    "title" : "Enumerator"
+  },
+  "identifier" : "com.example.sketch.7662642c-ab6d-439a-acee-4a6b9bf810df",
+  "version" : "1.0",
+  "description" : "Enumerate your layer or artboard names based on their x and y position",
+  "authorEmail" : "scottsavarie@gmail.com",
+  "name" : "Enumerator",
+  "homepage": "http://github.com/ScottSavarie/Enumerator"
+}

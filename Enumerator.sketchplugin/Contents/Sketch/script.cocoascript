@@ -1,0 +1,18 @@
+var onRun = function(context) {
+  var doc = context.document
+var enteredName = doc.askForUserInput_initialValue("Enter an name you want each layer or artboard to get.", "Ex: Mockup-")
+var selection = context.selection;
+var selectionCount = selection.count()
+var artboards = Array();
+
+for(var i=0; i < selectionCount; i++) {
+    artboards[i] = context.selection[i];
+}
+
+artboards.sort(function(a,b){ return a.frame().x() - b.frame().x()});
+
+for (var i = 0; i < selectionCount; i++){
+    var name = enteredName + (i+1).toString();
+    artboards[i].setName(name)
+}
+};
