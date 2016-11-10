@@ -11,8 +11,14 @@ for(var i=0; i < selectionCount; i++) {
 
 artboards.sort(function(a,b){ return a.frame().x() - b.frame().x()});
 
-for (var i = 0; i < selectionCount; i++){
-    var name = enteredName + (i+1).toString();
-    artboards[i].setName(name)
-}
+    for (var i = 0; i < selectionCount; i++){
+        if(i <= 8){
+            var name = enteredName + "0" + (i+1).toString();
+            artboards[i].setName(name)
+        }
+        else{
+            var name = enteredName + (i+1).toString();
+            artboards[i].setName(name)
+        }
+    }
 };
