@@ -3,7 +3,8 @@ Sketch plugin to rename your artboards or layers based on their x,y position
 
 
 
-![img](blob:http://imgur.com/b774c9a9-5fac-45f9-b333-b2ea181f35b0)
+![img](http://i.imgur.com/yfY98Z1.gif)
+
 
 ## Installation
 
