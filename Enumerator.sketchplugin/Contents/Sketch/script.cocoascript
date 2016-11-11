@@ -5,11 +5,12 @@ var selection = context.selection;
 var selectionCount = selection.count()
 var artboards = Array();
 
-for(var i=0; i < selectionCount; i++) {
-    artboards[i] = context.selection[i];
-}
+if(selectionCount > 0) {
+    for(var i=0; i < selectionCount; i++) {
+        artboards[i] = context.selection[i];
+    }
 
-artboards.sort(function(a,b){ return a.frame().x() - b.frame().x()});
+    artboards.sort(function(a,b){ return a.frame().x() - b.frame().x()});
 
     for (var i = 0; i < selectionCount; i++){
         if(i <= 8){
@@ -21,4 +22,28 @@ artboards.sort(function(a,b){ return a.frame().x() - b.frame().x()});
             artboards[i].setName(name)
         }
     }
+}
+
+else {
+    var pageArtboards = doc.currentPage().artboards();
+    for(var i=0; i < pageArtboards.count(); i++) {
+        artboards[i] = pageArtboards[i];
+    }
+
+    artboards.sort(function(a,b){ return a.frame().x() - b.frame().x()});
+
+    for (var i = 0; i < pageArtboards.count(); i++){
+        if(i <= 8){
+            var name = enteredName + "0" + (i+1).toString();
+            artboards[i].setName(name)
+        }
+        else{
+            var name = enteredName + (i+1).toString();
+            artboards[i].setName(name)
+        }
+    }
+}
 };
+
+
+

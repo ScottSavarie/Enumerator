@@ -18,9 +18,10 @@
     "title" : "Enumerator"
   },
   "identifier" : "com.example.sketch.7662642c-ab6d-439a-acee-4a6b9bf810df",
-  "version" : "1.0",
+  "version" : "1.1",
   "description" : "Enumerate your layer or artboard names based on their x and y position",
   "authorEmail" : "scottsavarie@gmail.com",
   "name" : "Enumerator",
-  "homepage": "http://github.com/ScottSavarie/Enumerator"
+  "homepage": "http://github.com/ScottSavarie/Enumerator",
+  "updateURL": "https://github.com/ScottSavarie/Enumerator/blob/master/Enumerator.sketchplugin/Contents/Sketch/manifest.json"
 }
